@@ -19,7 +19,7 @@ namespace LAB1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            button2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,11 +46,26 @@ namespace LAB1
             {
                 label1.Text = "Треугольник разносторонний";
             }
+            button2.Visible = true;
+            button1.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = !false;
+            textBox2.Visible = !false;
+            textBox3.Visible = !false;
+            textBox1.Text = null;
+            textBox2.Text = null;
+            textBox3.Text = null;
+            button1.Visible = true;
+            button2.Visible = false;
+            label1.Text = "Ввежите длину сторон треугольника";
         }
     }
 }
